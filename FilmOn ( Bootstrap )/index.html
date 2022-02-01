@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FilmOn</title>
+        <link rel="shortcut icon" href="src/images/icons/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Genos:wght@300;500;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="/src/js/main.js">
+        <link rel="stylesheet" href="/src/css/main.min.css">
+        
+    </head>
+    <body>
+      <header> 
+        <div class="Header__line_bg"></div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="index.html">Film</a>
+          <p class="logo_subtitle">Watch movies online</p>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link-active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="show.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="series.html">Serials</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="genres.html">Genres</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="top.html">Top</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="member.html">Membership</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+              </ul>
+              <!-- LogInPanel -->
+              <div class="log-in_panel">
+                <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Log in
+                </a>
+              </div>
+
+              <div class="collapse" id="collapseExample">
+                  <div class="container">
+                    <div class="d-flex justify-content-center h-100">
+                      <div id="log__card" class="card">
+                        <div class="card-header">
+                          <h3>Sign In</h3>
+                        </div>
+                        <div class="card-body">
+                          <form>
+                            <div class="input-group form-group">
+                              <div class="input-group-prepend">
+                              </div>
+                              <input type="text" class="form-control" placeholder="username">
+                              
+                            </div>
+                            <div class="input-group form-group">
+                              <div class="input-group-prepend">
+                                
+                              </div>
+                              <input type="password" class="form-control" placeholder="password">
+                            </div>
+                            <div class="row align-items-center remember">
+                              <input type="checkbox">Remember Me
+                            </div>
+                            <div class="form-group">
+                              <input type="submit" value="Login" class="btn float-right login_btn">
+                            </div>
+                          </form>
+                        </div>
+                        <div class="card-footer">
+                          <div class="d-flex justify-content-center links">
+                            <a href="#">Sign Up</a>
+                          </div>
+                          <div class="d-flex justify-content-center">
+                            <a href="#">Forgot your password?</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- LogInPanel -->
+          
+            <div class="navbar_themeswitcher">
+              <svg class="bi bi-brightness-alt-high-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"  viewBox="0 0 16 16">
+                <path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm-13.5.5a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1h2zm11.157-6.157a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm-9.9 2.121a.5.5 0 0 0 .707-.707L3.05 5.343a.5.5 0 1 0-.707.707l1.414 1.414zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5 4 4 0 0 0-4-4z"/>
+              </svg>
+            </div>
+        </nav>
+    </header>
+    
+      <div class="wrapper">
+        <div class="containter">
+          <div class="row">
+
+            
+
+            <div class="col-xs-9 xol-md-9 col-lg-9 col order-4">
+              <!-- Search panel -->
+              <div class="search_panel d-none d-xs-block d-md-block">
+                <div class="input-group">
+                  <input type="search" class="form-control rounded" placeholder="Find your favourites..." aria-label="Search"
+                  aria-describedby="search-addon"/>
+                  <button type="button" class="btn btn-warning">search</button>
+                </div>
+              </div>
+
+              <h2>Movies</h2>
+              <hr>
+              <div class="row">
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <a href="#"><img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-10/27/21/asset/878207caa966/sub-buzz-2748-1603833405-1.jpg" alt=""> </a>
+                  
+                </div>
+
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-10/27/21/asset/878207caa966/sub-buzz-2748-1603833405-1.jpg" alt="">
+                  
+                </div>
+
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-10/27/21/asset/878207caa966/sub-buzz-2748-1603833405-1.jpg" alt="">
+                  
+                </div>
+
+
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-10/27/21/asset/878207caa966/sub-buzz-2748-1603833405-1.jpg" alt="">
+                  
+                </div>
+
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-10/27/21/asset/878207caa966/sub-buzz-2748-1603833405-1.jpg" alt="">
+                  
+                </div>
+
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-10/27/21/asset/878207caa966/sub-buzz-2748-1603833405-1.jpg" alt="">
+                  
+                </div>
+
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-10/27/21/asset/878207caa966/sub-buzz-2748-1603833405-1.jpg" alt="">
+                  
+                </div>
+
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-10/27/21/asset/878207caa966/sub-buzz-2748-1603833405-1.jpg" alt="">
+                </div>
+
+              </div>
+                <hr>
+                <h2>Series</h2>
+                <div class="row">
+                  <div id="series" class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img src="https://i2.wp.com/www.fiz-x.com/wp-content/uploads/2014/11/marco-small.jpg?ssl=1" tabindex="1" alt="">
+                  </div>
+
+                  <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img src="https://i2.wp.com/www.fiz-x.com/wp-content/uploads/2014/11/marco-small.jpg?ssl=1" alt="">
+                  </div>
+
+                  <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img src="https://i2.wp.com/www.fiz-x.com/wp-content/uploads/2014/11/marco-small.jpg?ssl=1" alt="">
+                  </div>
+
+                  <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img src="https://i2.wp.com/www.fiz-x.com/wp-content/uploads/2014/11/marco-small.jpg?ssl=1" alt="">
+                  </div>
+
+                  <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img src="https://i2.wp.com/www.fiz-x.com/wp-content/uploads/2014/11/marco-small.jpg?ssl=1" alt="">
+                  </div>
+
+                  <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img src="https://i2.wp.com/www.fiz-x.com/wp-content/uploads/2014/11/marco-small.jpg?ssl=1" alt="">
+                  </div>
+
+                  <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img src="https://i2.wp.com/www.fiz-x.com/wp-content/uploads/2014/11/marco-small.jpg?ssl=1" alt="">
+                  </div>
+
+                  <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img src="https://i2.wp.com/www.fiz-x.com/wp-content/uploads/2014/11/marco-small.jpg?ssl=1" alt="">
+                  </div>
+                </div>
+                
+              <!-- BLOG SECTION -->
+              <div class="margin-8"></div>
+                <a href="#"><h3>How was the Blade movie created</h3></a>
+              <hr>
+              <p>
+                Superhero film written and directed by David S. Goyer, who also wrote the screenplays to Blade and Blade II. It stars Wesley Snipes as Marvel Comics character Blade, who also produced with Goyer, Peter Frankfurt and Lynn Harris...
+              </p>
+              <a href="#" class="btn btn-warning pull-right btn-sm">Read more</a>
+              
+              <div class="margin-8"></div>
+              
+              <a href="#"><h3>Interstellar was good?</h3></a>
+              <hr>
+              <p>
+                When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans...
+              </p>
+              <a href="#" class="btn btn-warning btn-sm">Read more</a>
+      
+
+            </div>
+
+            
+            
+
+            
+
+            <!-- Search panel for mobile -->
+            <div class="col-xs-3 col-md-3 col-lg-3 col order-1">
+              <div class="search_panel d-block d-sm-none ">
+                <div class="input-group">
+                  <input type="search" class="form-control rounded" placeholder="Find your favourites..." aria-label="Search"
+                  aria-describedby="search-addon"/>
+                  <button type="button" class="btn btn-warning">search</button>
+                </div>
+              </div>
+              
+              <!-- Ratings aside -->
+            <hr>
+            <ul class="list-group">
+              <h3 class="Rating">Ratings</h3>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="#">Interstellar</a> 
+                <span class="badge badge-primary badge-pill">87</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="#">Vampire's diary</a> 
+                <span class="badge badge-primary badge-pill">86</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="#">Dead or alive</a> 
+                <span class="badge badge-primary badge-pill">77</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="#">Lucifer</a> 
+                <span class="badge badge-primary badge-pill">69</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="#">Indegious</a> 
+                <span class="badge badge-primary badge-pill">67</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="#">Frost fallen</a>  
+                <span class="badge badge-primary badge-pill">53</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="#">Cortix</a>  
+                <span class="badge badge-primary badge-pill">41</span>
+              </li>
+            </ul>
+            <hr>
+
+            <div id="accordion_news" class="accordion-news">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      News
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Website update:</strong> 2021/07/15 <br><br>The update of website is getting on it's way , please refer to the forum , for more information. 
+                      <br>
+                      We are grateful that you support us. 
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+            </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="clear"></div>
+      
+
+
+    <footer>
+      <div class="container">
+        <p class="text-center"><a href="http://127.0.0.1:5500/index.html">FilmOn</a></p>
+        
+        <p class="copyright">All rights reserved.</p>
+      </div>
+    </footer>
+
+      <noscript>Please turn on Javascript in your browser</noscript>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="/src/js/main.js"></script>
+    </body>
+</html> 
